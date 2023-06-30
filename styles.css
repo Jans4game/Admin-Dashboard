@@ -1,0 +1,696 @@
+html{
+    background-color: #4f5666;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 3fr 4fr 4fr 4fr 4fr ;
+    grid-template-columns: 1fr 5fr;
+    height: 57.5em;
+}
+
+.sidebar{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    background-color: #4f5666;
+    grid-template-rows: repeat(19, 1fr);
+    grid-template-columns: 1fr 4fr;
+}
+
+.dashboard{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-left: 0.1em;
+}
+
+.dashboardsvg{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.empty1{
+    grid-row: 2/3;
+}
+
+.home{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 0.3em;
+    padding-left: 0.7em;
+}
+
+.home:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.homesvg{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.profile{
+    grid-row: 4/5;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.7em;
+}
+
+.profile:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.profilesvg{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.messages{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    padding-left: 0.7em;
+}
+
+.messages:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.messagessvg{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+    padding-top: 0.1em;
+}
+
+.history{
+    grid-row: 6/7;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.7em;
+    padding-bottom: 0.2em;
+}
+
+.history:hover{
+    color: white;
+    cursor: pointer;
+}
+.historysvg{
+    grid-row: 6/7;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.tasks{
+    grid-row: 7/8;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.7em;
+    padding-bottom: 0.2em;
+
+}
+
+.tasks:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.taskssvg{
+    grid-row: 7/8;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.communities{
+    grid-row: 8/9;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.7em;
+    padding-bottom: 0.1em;
+}
+
+.communities:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.communitiessvg{
+    grid-row: 8/9;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.empty1{
+    grid-row: 9/10;
+}
+
+.settings{
+    grid-row: 10/11;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.7em;
+}
+
+.settings:hover{
+    color: white;    
+    cursor: pointer;
+}
+
+.settingssvg{
+    grid-row: 10/11;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.support{
+    grid-row: 11/12;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.7em;
+    padding-bottom: 0.2em;
+}
+
+.support:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.supportsvg{
+    grid-row: 11/12;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.privacy{
+    grid-row: 12/13;
+    grid-column: 2/3;
+    align-self: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-left: 0.7em;
+}
+
+.privacy:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.privacysvg{
+    grid-row: 12/13;
+    grid-column: 1/2;
+    justify-self: end;
+    align-self: center;
+}
+
+.header{
+    background-color: lightgray;
+    padding-top: 2em;
+    
+}
+
+.searchsvg{
+    display: flex;
+    padding-left: 10em;
+}
+
+#search{
+    border-radius: 1.3em;
+    height: 2em;
+    width: 60em;
+}
+
+.beller{
+    padding-left: 10em;   
+}
+
+.pic{
+    padding-left: 1.5em;
+}
+
+.blumelogo{
+    padding-left: 2em;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 2px;
+}
+
+.underheadcontainment{
+    padding-top: 1em;
+    display: flex;
+}
+
+.secondnet{
+    display: flex;
+    flex-direction: row;
+}
+
+.thirdnet{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5em;
+    align-self: center;
+}
+
+.pic2{
+    padding-left: 8.5em;
+}
+
+.logosider1{
+    font-weight: bold;
+}
+
+.logosider2{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+
+
+.fourthnet{
+    display: flex;
+    padding-left: 47em;
+    align-self: center;
+}
+
+
+.button1{
+    padding-right: 2em;
+}
+
+.new{
+    height: 3em;
+    width: 8em;
+    border-radius: 20px;
+    background-color: gray;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.new:hover{
+    background-color: #4f5666;
+}
+
+.button2{
+    padding-right: 2em;
+}
+
+.share{
+    height: 3em;
+    width: 8em;
+    border-radius: 20px;
+    background-color: gray;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.share:hover{
+    background-color: #4f5666;
+}
+
+.button3{
+    padding-right: 2em;
+}
+
+.upload{
+    height: 3em;
+    width: 8em;
+    border-radius: 20px;
+    background-color: gray;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.upload:hover{
+    background-color: #4f5666;
+}
+
+.mainContent{
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: white;
+}
+
+.titless{
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+.project{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.announcements{
+    padding-left: 40.7em;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.template{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 43.5em;
+}
+
+.firstbox{
+    grid-row: 1/8;
+    padding: 1em;
+    padding-left: 2.5em;
+}
+
+.grid1{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 9em;
+    width: 26em;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.grid1:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.content1{
+    font-weight: lighter;
+    font-size: 0.9em;
+    height: 4.5em;
+    width: 27em;
+}
+
+.secondbox{
+    grid-row: 9/16;
+    padding: 1em;
+    padding-left: 2.5em;
+
+}
+
+.grid2{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 9em;
+    width: 26em;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.grid2:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.content2{
+    font-weight: lighter;
+    font-size: 0.9em;
+    height: 4.5em;
+    width: 27em;
+}
+
+.thirdbox{
+    grid-row: 17/24;
+    padding: 1em;
+    padding-left: 2.5em;
+}
+
+.grid3{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 9em;
+    width: 26em;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.grid3:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.content3{
+    font-weight: lighter;
+    font-size: 0.9em;
+    height: 4.5em;
+    width: 27em;
+}
+
+.fourthbox{
+    grid-row: 1/8;
+    grid-column: 2/3;
+    padding: 1em;
+}
+
+.grid4{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 9em;
+    width: 26em;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.grid4:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.content4{
+    font-weight: lighter;
+    font-size: 0.9em;
+    height: 4.5em;
+    width: 27em;
+}
+
+.fifthbox{
+    grid-row: 9/16;
+    grid-column: 2/3;
+    padding: 1em;
+}
+
+.grid5{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 9em;
+    width: 26em;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.grid5:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.content5{
+    font-weight: lighter;
+    font-size: 0.9em;
+    height: 4.5em;
+    width: 27em;
+}
+
+.sixthbox{
+    grid-row: 17/24;
+    grid-column: 2/3;
+    padding: 1em;
+}
+
+.grid6{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 9em;
+    width: 26em;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.grid6:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.content6{
+    font-weight: lighter;
+    font-size: 0.9em;
+    height: 4.5em;
+    width: 27em;
+}
+
+.seventhbox{
+    grid-row: 1/12;
+    padding: 1em;
+}
+
+.grid7{
+    border: 5px solid black;
+    height: 16em;
+    width: 19em;
+    border-radius: 10px;
+    padding-left: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.helooer{
+    border-radius: 13px;
+}
+
+.helooer:hover{
+    background-color: lightgray;
+}
+
+.site{
+    margin-bottom: 0.2em;
+    margin-top: 0.8em;
+    
+}
+
+.maintanence{
+    font-weight: lighter;
+    font-size: 0.9em;
+    margin: 0px;
+}
+
+.trending{
+    grid-row: 13/14;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.eighthbox{
+    grid-row: 14/23;
+    padding: 1em;   
+}
+
+.grid8{
+    border: 5px solid black;
+    height: 13.5em;
+    width: 19em;
+    border-radius: 10px;
+    padding-left: 1em;
+    padding-top: 1em;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.icontime{
+    flex: 1;
+    align-self: flex-end;
+    padding-right: 1em;
+}
+
+.oner{
+    display: flex;
+    padding: 0.4em;
+    border-radius: 15px;
+}
+
+.oner:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.acc1{
+    border-radius: 10px;
+    
+}
+
+.mailandname1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+}
+
+.person1{
+    margin: 0px;
+}
+
+.name1{
+    margin: 0px;
+    font-weight: lighter;
+
+}
